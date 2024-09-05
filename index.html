@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <!-- <link rel="stylesheet" href="ResPonsive.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <!-- Google tag (gtag.js) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-0542QS1TED"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0542QS1TED');
+</script> -->
+</head>
+<body>
+    <div class="serch-bar">
+        <!-- <div class="input-field"> -->
+            <input type="text" placeholder="Search your City">
+        <!-- </div> -->
+
+        <!-- <div class="search-button"> -->
+            <button>Search</button>
+        <!-- </div> -->
+    </div>
+
+
+    <div class="weather-details">
+        <div class="weather-icon">
+            <!-- <img src="https://media.istockphoto.com/id/2119156970/vector/vector-illustration-of-partly-cloudy-skies-weather-forecast-symbol-simple-cute-sun-and-cloud.jpg?s=612x612&w=0&k=20&c=DUIiQLWJOk5ZLAqYelmqD9V3CHWuepvJWidIM_JtwUw=" alt=""> -->
+            <!-- <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt=""> -->
+             
+            <img id="apiimg" src="images/clear-removebg.png" alt="">
+            <p class="cloudy" id="cldy">Weather Status</p>
+            <p class="city" id="city-id">City name</p>
+            <p class="time">18 August, 10:58 pm</p>
+        </div>
+
+        <div class="weather-description">
+           
+            
+            <div class="tempture-iconANDinfo">
+                <div class="tempture-icon">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRBU_gOdrX60t1wZ9PZNGmoljMD-kKSnDlnQ&s" alt="tempture">
+                </div>
+
+                <div class="tempture-info">
+                    <p class="tempture">Tempture</p>
+                    <div class="tempture-scale-info">
+                        <p class="tempture-scale">44</p>
+                        <sup class="tempture-scale-deg"> °C</sup>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+
+            <div class="wind-iconANDinfo">
+
+                <div class="wind-icon">
+                    <img src="https://media.istockphoto.com/id/1368763816/vector/wind-blow-vector-icon-air-puff-symbol.jpg?s=612x612&w=0&k=20&c=0GIijczbW0qFbHtaPWS9tf-QUSYCRr627AkUp5I0jRo=" alt="">
+                </div>
+
+                <div class="wind-info">
+                    <p class="wind">Wind</p>
+                    <div class="wind-scale-info">
+                        <p class="wind-scale">45</p>
+                        <p class="wind-scale-km">Km/h</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="humidity-iconANDinfo">
+                <div class="humidity-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4148/4148460.png" alt="humidity">
+                </div>
+
+                <div class="humidity-info">
+                    <p class="humidity">Humidity</p>
+                    <div class="humidity-scale-info">
+                        <p class="humidity-scale">63</p>
+                        <p class="humidity-scale-percent">%</p>
+                    </div>
+                    
+                </div>
+            </div>
+           
+
+            <div class="cloud-iconANDinfo">
+                <div class="cloud-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/252/252035.png" alt="cloud">
+                </div>
+
+                <div class="cloud-info">
+                    <p class="cloud">Cloud</p>
+                    <div class="cloud-scale-info">
+                        <p class="cloud-scale">26</p>
+                        <p class="cloud-scale-percent">%</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="weather-description2">
+            
+            <div class="feellike-iconANDinfo">
+                <!-- <div class="tempture-icon">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRBU_gOdrX60t1wZ9PZNGmoljMD-kKSnDlnQ&s" alt="tempture">
+                </div> -->
+
+                <div class="feellike-info">
+                    <p class="feellike">Feellike</p>
+                    <div class="feellike-scale-info">
+                        <p class="feellike-scale">39.2</p>
+                        <sup class="feellike-scale-deg"> °C</sup>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="dew-point-iconANDinfo">
+                <!-- <div class="tempture-icon">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRBU_gOdrX60t1wZ9PZNGmoljMD-kKSnDlnQ&s" alt="tempture">
+                </div> -->
+
+                <div class="dew-point-info">
+                    <p class="dew-point">Dew point</p>
+                    <div class="dew-point-scale-info">
+                        <p class="dew-point-scale">39.2</p>
+                        <sup class="dew-point-scale-deg"> °C</sup>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="pressure-iconANDinfo">
+                <!-- <div class="tempture-icon">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRBU_gOdrX60t1wZ9PZNGmoljMD-kKSnDlnQ&s" alt="tempture">
+                </div> -->
+
+                <div class="pressure-info">
+                    <p class="pressure">Pressure</p>
+                    <div class="pressure-scale-info">
+                        <p class="pressure-scale">39.2</p>
+                        <sup class="pressure-scale-mbar">mBar</sup>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <div class="uv-index-iconANDinfo">
+                <!-- <div class="tempture-icon">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRBU_gOdrX60t1wZ9PZNGmoljMD-kKSnDlnQ&s" alt="tempture">
+                </div> -->
+
+                <div class="uv-index-info">
+                    <p class="uv-index">UV Index</p>
+                    <div class="uv-index-scale-info">
+                        <p class="uv-index-scale">1</p>
+                        <sup class="uv-index-scale-updown">Low</sup>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="perants-footer">
+        <div class="footer">
+            <div class="email">
+                <p><b>Contact :- mahadev218das@gmail.com</b></p>
+            </div>
+            <div class="Linkedin">
+                <a href="https://www.linkedin.com/in/mahadev-das-962888254/"><b>Linkedin</b></a>
+            </div>
+        </div>
+        <h5>@Copyright</h2>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
